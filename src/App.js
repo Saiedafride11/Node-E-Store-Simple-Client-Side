@@ -15,6 +15,7 @@ import Register from './component/Register/Register';
 import AuthProvider from './component/Context/AuthProvider';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 import Shipping from './component/Shipping/Shipping';
+import Orders from './component/Orders/Orders';
 
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
                </PrivateRoute>
                <PrivateRoute path="/placeorder">
                   <PlaceOrder></PlaceOrder>
+               </PrivateRoute>
+               <PrivateRoute path="/orders">
+                  <Orders></Orders>
                </PrivateRoute>
                <PrivateRoute path="/shipping">
                   <Shipping></Shipping>

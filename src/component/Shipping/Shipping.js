@@ -12,6 +12,8 @@ const Shipping = () => {
         const savedCart = getStoredCart();
         data.order = savedCart;
 
+        // data.createdAt = new Date();
+
         // fetch('http://localhost:5000/orders', {
         fetch('https://hidden-reef-85288.herokuapp.com/orders', {
             method: 'POST',
